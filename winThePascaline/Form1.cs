@@ -16,5 +16,77 @@ namespace winThePascaline
         {
             InitializeComponent();
         }
+
+        private void btnTopla_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float sayi1 = float.Parse(txtSayi1.Text);
+                float sayi2 = float.Parse(txtSayi2.Text);
+
+                float result = sayi1 + sayi2;
+                MessageBox.Show(result.ToString());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Bir Hata Oluştu");
+                throw;
+            }
+        }
+
+        private void btnCikar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float sayi1 = float.Parse(txtSayi1.Text);
+                float sayi2 = float.Parse(txtSayi2.Text);
+
+                float result = sayi1 - sayi2;
+                MessageBox.Show(result.ToString());
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Bir hata oluştu");
+                throw;
+            }
+        }
+
+        private void btnCarp_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                float sayi1 = float.Parse(txtSayi1.Text);
+                float sayi2 = float.Parse(txtSayi2.Text);
+
+                float result = sayi1 * sayi2;
+                MessageBox.Show(result.ToString());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Bir Hata Oluştu");
+                throw;
+            }
+        }
+
+        private void btnBol_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                float sayi1 = float.Parse(txtSayi1.Text);
+                float sayi2 = float.Parse(txtSayi2.Text);
+
+                float result = sayi1 / sayi2;
+                MessageBox.Show(result.ToString());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Bir Hata oluştu");
+                throw;
+            }
+
+        }
     }
 }
